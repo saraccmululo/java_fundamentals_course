@@ -10,11 +10,11 @@ public class Main {
         //TextBox exercise
         var textBox1 = new TextBox();
         textBox1.setText("Box 1");
-        System.out.println(textBox1.text);
+        System.out.println(textBox1.getText());
 
         var textBox2 = new TextBox();
         textBox2.setText("Box 2");
-        System.out.println(textBox2.text);
+        System.out.println(textBox2.getText());
 
         //Getting user input exercise
         System.out.print("Name: ");
@@ -54,9 +54,9 @@ public class Main {
 
         var calculator = new MortgageCalculator((byte) principal, annualInterest, years);
 
-        var report = new MortgageReport(calculator);
-        report.printMortgage();
-        report.printPaymentSchedule();
+        var report1 = new MortgageReport(calculator);
+        report1.printMortgage();
+        report1.printPaymentSchedule();
     }
 
 }
